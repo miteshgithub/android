@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/username_text"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Welcome to Sample App"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+
+        />
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:hint="Enter Your Username"
+        android:inputType="textAutoComplete"
+        app:layout_constraintTop_toBottomOf="@+id/username_text"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+
+        />
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:hint="Enter Your Password"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/edit1"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:onClick="doSomething"
+        android:text="Login"
+        android:layout_marginTop="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/edit2"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        android:background="@drawable/button"
+
+
+/>
+
+
+</android.support.constraint.ConstraintLayout>
